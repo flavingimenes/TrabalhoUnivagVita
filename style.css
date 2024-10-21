@@ -4,7 +4,7 @@
 @media (max-width: 768px) {
     body {
         margin: 0;
-        background: linear-gradient(180deg, rgba(54,54,54,1) 60%, rgba(58,181,73,1) 90%);
+        background: linear-gradient(180deg, rgb(37, 37, 37) 60%, rgba(58,181,73,1) 90%);
         height: 100vh;
         overflow: hidden; /* Impede rolagem */
     }
@@ -61,7 +61,7 @@
         border-radius: 15px;
     }
     
-    button {
+    a{
         width: 100%;
         padding: 10px;
         background-color: #4bbd1e; 
@@ -69,10 +69,17 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
-        font-weight: bolder;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: black;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: block;
+        width: 94%;
+        text-align: center;
     }
     
-    button:hover {
+    a:hover {
         background-color: #488529; 
     }
 }
