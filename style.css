@@ -82,6 +82,13 @@
     a:hover {
         background-color: #488529; 
     }
+
+    @supports (-webkit-appearance: none) {
+        a {
+            -webkit-appearance: none; /* Remover estilo padrão do Safari */
+            appearance: none;
+        }
+    }
 }
 
 /* Media Query para telas maiores que 769px */
