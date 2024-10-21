@@ -2,22 +2,22 @@
 
 /* Media Query para telas menores que 768px */
 @media (max-width: 768px) {
-
-    body{
-        margin: 0px;
+    body {
+        margin: 0;
         background: linear-gradient(180deg, rgba(54,54,54,1) 60%, rgba(58,181,73,1) 90%);
         height: 100vh;
+        overflow: hidden; /* Impede rolagem */
     }
     
-    .logo{
+    .logo {
         display: flex;
         justify-content: center;
-        padding-top: 100px;
+        padding-top: 20px; /* Ajuste o padding se necessário */
     }
 
-    .imagem{
-    height: 400px;
-    width: 200px;
+    .imagem {
+        max-height: 40vh; /* A imagem ocupará até 40% da altura da tela */
+        width: auto; /* Ajusta a largura automaticamente */
     }
 
     .container {
@@ -27,15 +27,16 @@
         right: 0;
         display: flex;
         justify-content: center;
-        padding-bottom: 50px;
+        padding-bottom: 20px; /* Ajuste o padding se necessário */
     }
     
     .login-box {
-        background-color: white; /* Caixa branca */
+        background-color: white;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 300px; /* Largura da caixa */
+        width: 90%; /* Largura responsiva */
+        max-width: 300px; /* Largura máxima */
     }
     
     h2 {
@@ -63,7 +64,7 @@
     button {
         width: 100%;
         padding: 10px;
-        background-color: #4bbd1e; /* Cor do botão */
+        background-color: #4bbd1e; 
         color: black;
         border: none;
         border-radius: 4px;
@@ -72,11 +73,11 @@
     }
     
     button:hover {
-        background-color: #0056b3; /* Cor do botão ao passar o mouse */
+        background-color: #488529; 
     }
 }
 
 /* Media Query para telas maiores que 769px */
 @media (min-width: 769px) {
-   
+    /* Estilos para telas maiores, se necessário */
 }
