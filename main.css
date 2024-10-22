@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px){
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.nav-left {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right>a {
+    color: #4bbd1e;
+}
+
+i.material-icons{
+font-size: 30px;
+}
+
+
+/* Esconder o botão de menu por padrão */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo para telas menores que 340px */
+@media (max-width: 340px) {
+    .nav-left {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .nav-left.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar{
+        flex-direction: row-reverse; 
+    }
+}
+
+/* Media Query para telas maiores que 769px */
+@media (min-width: 769px) {
+    /* Estilos para telas maiores, se necessário */
+}
