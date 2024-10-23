@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'font-apple-bold';
+    src: url(fonte/sf-pro-display/SFPRODISPLAYBOLD.OTF) format('truetype');
+}
+
 * {
     margin: 0px;
     padding: 0;
@@ -84,17 +89,26 @@ font-size: 30px;
 .container {
     display: flex;
     flex-direction: column;
-    height: 650px; /* Altura total que as barras ocuparão */
+    height: 1100px; /* Altura total que as barras ocuparão */
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .bar {
-    width: 250px; /* Largura das barras */
-    height: 70px; /* Altura das barras */
-    background-color: #00bf63;
+    width: 310px; /* Largura das barras */
+    height: 130px; /* Altura das barras */
+    background-color: #7d9f8f;
     border-radius: 5px;
+}
+
+.bar>p{
+    font-size: 40px;
+    padding-top: 38px;
+    padding-left: 15px;
+    font-family: 'font-apple-bold', sans-serif;
+    
 }
 
 /* Estilo para telas menores que 340px */
@@ -123,9 +137,6 @@ font-size: 30px;
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
-        opacity: 0; /* Começa invisível */
-        transform: translateY(-20px); /* Posição inicial fora da tela */
-        transition: opacity 0.5s ease, transform 0.5s ease; /* Animação suave */
     }
 
     /* Ao ativar o menu, os botões aparecem com animação */
@@ -138,8 +149,7 @@ font-size: 30px;
         justify-content: space-evenly;
         padding-bottom: 15px;
         top: 57px;
-        opacity: 1; /* Visível */
-        transform: translateY(0); /* Volta à posição original */
+        border-radius: 15px 15px 0px 0px;
     }
 
     /* O botão de menu ficará à esquerda */
