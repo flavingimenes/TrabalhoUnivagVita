@@ -68,7 +68,7 @@
 
     i.material-icons {
         font-size: 16px;   /* Tamanho do ícone */
-        color: rgba(58,181,73,1);        /* Cor do ícone */
+        color: #00bf63;        /* Cor do ícone */
         margin: 8px;      /* Margem ao redor do ícone */
       }
     
@@ -81,7 +81,7 @@
     
     a{
         padding: 10px;
-        background-color: #4bbd1e; 
+        background-color: #00bf63; 
         border: none;
         border-radius: 4px;
         cursor: pointer;
