@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+    margin: 0px;
+}
+
 /* Media Query para telas menores que 768px */
 @media (max-width: 768px){
 
@@ -19,6 +23,17 @@ body {
     position: relative;
 }
 
+.iconi{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.iconi>img{
+    width: 100%;
+    transform: scale(1.7);
+}
+
 .nav-left {
     display: flex;
     gap: 10px;
@@ -26,11 +41,12 @@ body {
 
 .nav-btn {
     background-color: #444;
-    color: white;
+    color: #4bbd1e;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: 700;
 }
 
 .nav-btn:hover {
@@ -63,28 +79,52 @@ font-size: 30px;
 
 /* Estilo para telas menores que 340px */
 @media (max-width: 340px) {
+    /* A navbar será flex-direction row, mas com o conteúdo organizado por ordem */
+    .navbar {
+        flex-direction: row-reverse;
+        justify-content: space-between; /* Elementos espaçados corretamente */
+    }
+
+    /* O "iconi" estará centralizado */
+    .iconi {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Os botões escondidos inicialmente, aparecem ao clicar no menu */
     .nav-left {
         display: none;
         position: absolute;
         top: 60px;
-        left: 0;
-        width: 100%;
+        right: 0; /* Alinhando os botões à direita */
+        width: auto; /* Não ocupar toda a largura */
         background-color: #333;
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
     }
 
+    /* Ao ativar o menu, os botões aparecem e são organizados horizontalmente */
     .nav-left.active {
         display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
     }
 
+    /* O botão de menu ficará à esquerda */
     .menu-btn {
         display: block;
     }
 
-    .navbar{
-        flex-direction: row-reverse; 
+    /* O nav-right com o ícone de logout fica à direita */
+    .nav-right {
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
