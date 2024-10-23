@@ -31,7 +31,8 @@ body {
 
 .iconi>img{
     width: 100%;
-    transform: scale(1.0);
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
 }
 
 .nav-left {
