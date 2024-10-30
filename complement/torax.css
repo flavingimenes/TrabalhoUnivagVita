@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'font-apple-bold';
+    src: url(fonte/sf-pro-display/SFPRODISPLAYBOLD.OTF) format('truetype');
+}
+
+@font-face{
+    font-family: 'font-apple-medium';
+    src: url(fonte/sf-pro-display/SFPRODISPLAYMEDIUM.OTF) format('truetype');
+}
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Media Query para telas menores que 768px */
+@media (max-width: 768px){
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 0px 0px 15px 15px;
+    position: fixed;
+    top: 0; /* Alinha a navbar ao topo da página */
+    left: 0;
+    width: 100%; /* Faz com que a navbar ocupe toda a largura */
+    z-index: 1000;
+}
+
+.iconi{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.iconi>img{
+    width: 100%;
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+
+.nav-left {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-btn {
+    background-color: #444;
+    color: #00bf63;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.nav-btn>a{
+    text-decoration: none;
+    color: #00bf63;
+}
+
+.nav-btn:hover {
+    background-color: #555;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right>a {
+    color: #00bf63;
+}
+
+i.material-icons{
+font-size: 30px;
+}
+
+/* Esconder o botão de menu por padrão */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 340px) {
+    /* A navbar será flex-direction row, mas com o conteúdo organizado por ordem */
+    .navbar {
+        flex-direction: row-reverse;
+        justify-content: space-between; /* Elementos espaçados corretamente */
+    }
+
+    /* O "iconi" estará centralizado */
+    .iconi {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Os botões escondidos inicialmente, com animação para aparecer */
+    .nav-left {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0; /* Alinhando os botões à direita */
+        width: auto; /* Não ocupar toda a largura */
+        background-color: #333;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        
+    }
+
+    /* Ao ativar o menu, os botões aparecem com animação */
+    .nav-left.active {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
+        top: 57px;
+        border-radius: 15px;
+        padding-top: 15px;
+    }
+
+    /* O botão de menu ficará à esquerda */
+    .menu-btn {
+        display: block;
+    }
+
+    /* O nav-right com o ícone de logout fica à direita */
+    .nav-right {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
