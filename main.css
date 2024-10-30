@@ -110,21 +110,40 @@ font-size: 30px;
     margin-bottom: 40px;
 }
 
+.container>a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .bar {
     width: 310px; /* Largura das barras */
     height: 130px; /* Altura das barras */
     background: rgb(217,217,217);
     background: linear-gradient(140deg, rgba(217,217,217,1) 0%, rgba(172,172,172,1) 50%, rgba(131,131,131,1) 100%);
     border-radius: 10px;
+    -webkit-box-shadow: 13px 13px 73px -16px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 13px 13px 73px -16px rgba(0, 0, 0, 0.73);
+    box-shadow: 20px 14px 40px -15px rgba(0, 0, 0, 0.73);
 }
 
 .bar>p{
     font-size: 35px;
     padding-top: 43px;
-    padding-left: 15px;
+    padding-left: 20px;
+    padding-right: 25px;
     font-family: 'font-apple-bold', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
-    
+}
+
+.bar:hover{
+    transform: scale(1.1); /* Aumenta o botão ao clicar */
+    cursor: pointer;
+    outline: none;
+     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .quem-somos{

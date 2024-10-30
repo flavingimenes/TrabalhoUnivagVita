@@ -15,8 +15,8 @@
             <img src="imgs/vitapng.png" alt="">
         </div>
         <div class="nav-left">
-            <button class="nav-btn" onclick="window.location.href='#'">Home</button>
-            <button class="nav-btn">Sobre</button>
+            <button class="nav-btn" id="nav-home">Home</button>
+            <button class="nav-btn" id="nav-info">Sobre</button>
             <button class="nav-btn"><a href="https://www.instagram.com/dhg_nsc?igsh=MWxjcWV2MDU3eGdzNQ==" target="_blank">Contato</a></button>
         </div>
         <div class="nav-right">
@@ -26,16 +26,32 @@
     </nav>
 
     <div class="container">
-        <div class="bar"><p>Torax</p></div>
-        <div class="bar"><p>Ombros</p></div>
-        <div class="bar"><p>Triceps</p></div>
-        <div class="bar"><p>Costas</p></div>
-        <div class="bar"><p>Biceps</p></div>
-        <div class="bar"><p>Abdominais</p></div>
-        <div class="bar"><p>Inferior</p></div>
-    </div>
+        <a href=""><div class="bar">
+                    <p>Torax</p>
+                    </div></a>
+        <a href=""><div class="bar">
+                    <p>Ombros</p>
+                    </div></a>
+        <a href=""><div class="bar">
+                    <p>Triceps</p>
+                    </div></a>
+        <a href=""><div class="bar">
+                    <p>Costas</p>
+                    </div></a>
+        <a href=""><div class="bar">
+                    <p>Biceps</p>
+                    </div></a>
+        <a href=""><div class="bar">
+                    <p>Abdômen</p>
+                    </div></a>  
+        <a href=""><div class="bar">
+                    <p>Inferior</p>
+                    </div></a>                      
 
-    <div class="quem-somos">
+    </div>
+    
+
+    <div class="quem-somos" id="sobre-nos">
         <h1>Quem <br><strong>Somos?</strong></h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo dignissimos reprehenderit quam delectus eius quaerat aliquam quia natus, consectetur unde accusantium sed ea, ipsum harum necessitatibus amet itaque architecto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, vero dolor itaque distinctio quis voluptates aspernatur recusandae. Cupiditate doloremque accusamus enim dicta. Repellat atque impedit quos maxime at omnis ipsam! lore</p>
     </div>
@@ -45,6 +61,27 @@
             const navLeft = document.querySelector('.nav-left');
             navLeft.classList.toggle('active');
         }
+
+        document.querySelector('#nav-info').addEventListener('click', function() {
+        const targetSection = document.querySelector('#sobre-nos');
+        const targetPosition = targetSection.offsetTop;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+
+    document.querySelector('#nav-home').addEventListener('click', function() {
+        const targetSection = document.querySelector('#nav-home');
+        const targetPosition = targetSection.offsetTop;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+
     </script>
     
 </body>
