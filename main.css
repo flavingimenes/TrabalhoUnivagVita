@@ -108,10 +108,11 @@ font-size: 30px;
     align-items: center;
     margin-top: 85px;
     margin-bottom: 40px;
+    text-decoration: none;
 }
 
 .container>a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: black;
 }
 
@@ -136,7 +137,7 @@ font-size: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    text-decoration: none;
 }
 
 .bar:hover{
