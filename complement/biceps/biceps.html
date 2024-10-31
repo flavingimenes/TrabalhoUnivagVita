@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="biceps.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../../imgs/vitapng.png" type="image/x-icon">
+    <title>Biceps</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="iconi">
+            <img src="../../imgs/vitapng.png" alt="">
+        </div>
+        <div class="nav-left">
+            <button class="nav-btn" id="nav-home" onclick="window.location.href='../../main.html'">Home</button>
+            <button class="nav-btn" id="nav-info">Sobre</button>
+            <button class="nav-btn"><a href="https://www.instagram.com/dhg_nsc?igsh=MWxjcWV2MDU3eGdzNQ==" target="_blank">Contato</a></button>
+        </div>
+        <div class="nav-right">
+                <a href="../../index.html"><i class="material-icons">logout</i></a>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const navLeft = document.querySelector('.nav-left');
+            navLeft.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -2,12 +2,12 @@
 
 @font-face {
     font-family:'font-apple-bold';
-    src: url(fonte/sf-pro-display/SFPRODISPLAYBOLD.OTF) format('truetype');
+    src: url(../../fonte/sf-pro-display/SFPRODISPLAYBOLD.OTF) format('truetype');
 }
 
 @font-face{
     font-family: 'font-apple-medium';
-    src: url(fonte/sf-pro-display/SFPRODISPLAYMEDIUM.OTF) format('truetype');
+    src: url(../../fonte/sf-pro-display/SFPRODISPLAYMEDIUM.OTF) format('truetype');
 }
 * {
     margin: 0px;
@@ -97,6 +97,13 @@ font-size: 30px;
     font-size: 30px;
     color: white;
     cursor: pointer;
+}
+
+.introducao{
+    margin-top: 85px;
+    margin-left: 15px;
+    font-family: 'font-apple-bold', sans-serif;
+    font-size: 35px;
 }
 
 @media (max-width: 340px) {
