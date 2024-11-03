@@ -122,11 +122,12 @@ font-size: 30px;
     margin-top: 85px;
     margin-bottom: 40px;
     text-decoration: none;
+    text-shadow: 2px 3px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .container>a{
     text-decoration: none !important;
-    color: black;
+    color: white;
 }
 
 
@@ -143,7 +144,7 @@ font-size: 30px;
 
 .bar>p{
     font-size: 35px;
-    padding-top: 43px;
+    padding-top: 39px;
     padding-left: 20px;
     padding-right: 25px;
     font-family: 'font-apple-bold', sans-serif;
@@ -153,11 +154,58 @@ font-size: 30px;
     text-decoration: none;
 }
 
+.bar>p>img{
+    width: 115px;
+    border-radius: 15px;
+}
+
 .bar:hover{
     transform: scale(1.1); /* Aumenta o botão ao clicar */
     cursor: pointer;
     outline: none;
      transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#peito{
+    background-image: url(imgs/treinopeito.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#ombro{
+    background-image: url(imgs/treinoombro.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bracos{
+    background-image: url(imgs/treinobraco.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#costas{
+    background-image: url(imgs/treinocostas.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#abdomen{
+    background-image: url(imgs/treinoabdomen.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#perna{
+    background-image: url(imgs/treinoperna.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .quem-somos{
