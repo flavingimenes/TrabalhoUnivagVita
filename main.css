@@ -22,6 +22,10 @@
         margin-right: 70px;
         margin-left: 70px;  
     }
+
+    .quem-somos>p>strong{
+        color: #44aa00;
+    }
 }
 
 /* Media Query para telas menores que 768px */
@@ -173,6 +177,10 @@ font-size: 30px;
     text-align: justify;
     padding: 20px;
     font-size: 20px;
+}
+
+.quem-somos>p>strong{
+    color: #44aa00;
 }
 
 /* Estilo para telas menores que 340px */
