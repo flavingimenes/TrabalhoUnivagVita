@@ -5,6 +5,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+input[type="email"] {
+    font-size: 16px;
+    touch-action: manipulation;
+}
+
+input[type="password"] {
+    font-size: 16px;
+    touch-action: manipulation;
+}
+
 /* logo ficar mais centralizada conforme o tamanho do celula */
 @media (min-height: 600px) {
     .imagem {
