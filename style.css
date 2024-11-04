@@ -45,20 +45,19 @@ input[type="password"] {
     }
 
     .container {
+        position: relative;
         bottom: 0;
         left: 0;
-        right: 0;
-        display: flex;
-        margin-left: 200px;
+
+        display: flex;   
     }
     
     .login-box {
         background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 90%; /* Largura responsiva */
-        max-width: 300px; /* Largura máxima */
+        padding: 12vw;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 400px;
     }
     
     h2 {
@@ -67,7 +66,7 @@ input[type="password"] {
     }
     
     .input-group {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         display: flex;
     }
     

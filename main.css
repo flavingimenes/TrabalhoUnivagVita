@@ -34,35 +34,31 @@
 }
 
 body {
+    position: relative;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 .navbar {
+    position: sticky;
+    border-radius: 0px 0px 15px 15px;
+    top: 0; 
+    left: 0;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    position: relative;
-    border-radius: 0px 0px 15px 15px;
-    position: fixed;
-    top: 0; /* Alinha a navbar ao topo da página */
-    left: 0;
-    width: 100%; /* Faz com que a navbar ocupe toda a largura */
+
+    background-color: #44aa00;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+    
     z-index: 1000;
 }
 
-.iconi{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
-.iconi>img{
-    width: 100%;
-    -webkit-transform: scale(1.5); 
-    transform: scale(1.5);
+.logo h1{
+    color: #fff;
 }
 
 .nav-left {
@@ -72,7 +68,7 @@ body {
 
 .nav-btn {
     background-color: #444;
-    color: #00bf63;
+    color: #fff;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -82,7 +78,7 @@ body {
 
 .nav-btn>a{
     text-decoration: none;
-    color: #00bf63;
+    color: #fff;
 }
 
 .nav-btn:hover {
@@ -95,7 +91,7 @@ body {
 }
 
 .nav-right>a {
-    color: #00bf63;
+    color: #fff;
 }
 
 i.material-icons{
@@ -116,30 +112,38 @@ font-size: 30px;
 .container {
     display: flex;
     flex-direction: column;
-    height: 1100px; /* Altura total que as barras ocuparão */
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
     align-items: center;
-    margin-top: 85px;
-    margin-bottom: 40px;
+
+    height: auto;
+    width: 100%;
+
     text-decoration: none;
-    text-shadow: 2px 3px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .container>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
     text-decoration: none !important;
     color: white;
 }
 
 
 .bar {
-    width: 310px; /* Largura das barras */
-    height: 130px; /* Altura das barras */
-    background: rgb(217,217,217);
-    background: linear-gradient(140deg, rgba(217,217,217,1) 0%, rgba(172,172,172,1) 50%, rgba(131,131,131,1) 100%);
-    border-radius: 10px;
-    -webkit-box-shadow: 13px 13px 73px -16px rgba(0, 0, 0, 0.73);
-    -moz-box-shadow: 13px 13px 73px -16px rgba(0, 0, 0, 0.73);
-    box-shadow: 20px 14px 40px -15px rgba(0, 0, 0, 0.73);
+    width: 90%; /* Largura das barras */
+    height: 25vh;
+
+    border: none;
+    border-radius: 12px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    transition: .2s;
 }
 
 .bar>p{
@@ -160,11 +164,20 @@ font-size: 30px;
 }
 
 .bar:hover{
-    transform: scale(1.1); /* Aumenta o botão ao clicar */
+    transform: scale(1.05);
     cursor: pointer;
     outline: none;
-     transition: transform 0.2s ease, background-color 0.2s ease;
+
+    backdrop-filter: blur(40%);
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+.bar:active{
+    transform: scale(.95);
+    transition: 0s linear;
+
+}
+
 
 #peito{
     background-image: url(imgs/treinopeito.jpg);
@@ -207,6 +220,7 @@ font-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 .quem-somos{
     font-family: 'font-apple-bold', sans-serif;
