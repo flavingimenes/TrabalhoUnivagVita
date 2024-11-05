@@ -62,11 +62,40 @@
             No <strong>VITA</strong>, acreditamos que, com um pouco de disciplina e apoio, cada pessoa pode alcançar seus objetivos e viver uma vida mais saudável.</p> 
     </div>
 
+    <div class="tree">
+        
+    </div>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h2>Sobre Nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius.</p>
+          </div>
+          
+          <div class="footer-section contact">
+            <h2>Contato</h2>
+            <p>Email: vita@gmail.com</p>
+            <p>Telefone: (65) 9218-4810</p>
+            <div class="socials">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2024 VITA'S Group. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+
     <script>
         function toggleMenu() {
-            const navLeft = document.querySelector('.nav-left');
-            navLeft.classList.toggle('active');
-        }
+    const menu = document.querySelector('.nav-left');
+    menu.classList.toggle('show');
+  }
 
         document.querySelector('#nav-info').addEventListener('click', function() {
         const targetSection = document.querySelector('#sobre-nos');

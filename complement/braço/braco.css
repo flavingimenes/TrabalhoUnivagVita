@@ -9,146 +9,91 @@
     font-family: 'font-apple-medium';
     src: url(../../fonte/sf-pro-display/SFPRODISPLAYMEDIUM.OTF) format('truetype');
 }
+
 * {
-    margin: 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-/* Media Query para telas menores que 768px */
-@media (max-width: 768px){
-
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
-    padding: 10px 20px;
-    position: relative;
+    color: #44aa00;
+    padding-right: 20px;
+    padding-left: 20px;
     border-radius: 0px 0px 15px 15px;
-    position: fixed;
-    top: 0; /* Alinha a navbar ao topo da página */
-    left: 0;
-    width: 100%; /* Faz com que a navbar ocupe toda a largura */
-    z-index: 1000;
-}
+    height: 60px;
+    background: rgb(0,0,0);
+    background: linear-gradient(24deg, rgba(0,0,0,1) 0%, rgba(34,50,39,1) 68%, rgba(50,93,34,1) 100%);
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
 
-.iconi{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-}
-
-.iconi>img{
-    width: 100%;
-    -webkit-transform: scale(1.5); 
-    transform: scale(1.5);
-}
-
-.nav-left {
-    display: flex;
-    gap: 12px;
-}
-
-.nav-btn {
-    background-color: #444;
-    color: #00bf63;
-    border: none;
-    padding: 10px 15px;
+  .logo>img{
+    width: 70px;
+  }
+  
+  .menu-icon {
+    font-size: 1.5em;
     cursor: pointer;
+  }
+  
+  .menu-options {
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    right: 5px;
+    background-color: #223227;
     border-radius: 5px;
-    font-weight: 700;
-}
+    max-height: 0; /* Inicialmente escondido */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out; /* Animação de expansão */
+    text-align: center;
+  }
+  
+  .menu-options li {
+    padding: 10px 20px;
+    border-bottom: 3px solid #444;
+  }
 
-.nav-btn>a{
-    text-decoration: none;
-    color: #00bf63;
-}
-
-.nav-btn:hover {
-    background-color: #555;
-}
-
-.nav-right {
+  .menu-options div{
     display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .menu-options li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu-options a {
+    color: #44aa00;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'font-apple-bold', sans-serif;
+    font-size: 1.1em;
+  }
+  
+  .menu-options a:hover {
+    color: #44aa00;
+  }
+  
+  .menu-options.show {
+    display: flex;
+    max-height: 200px; /* Limite de altura ao expandir */
+    flex-direction: column;
+    color: #44aa00;
     align-items: center;
-}
-
-.nav-right>a {
-    color: #00bf63;
-}
-
-i.material-icons{
-font-size: 30px;
-}
-
-/* Esconder o botão de menu por padrão */
-.menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-}
-
-@media (max-width: 340px) {
-    /* A navbar será flex-direction row, mas com o conteúdo organizado por ordem */
-    .navbar {
-        flex-direction: row-reverse;
-        justify-content: space-between; /* Elementos espaçados corretamente */
-    }
-
-    /* O "iconi" estará centralizado */
-    .iconi {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    /* Os botões escondidos inicialmente, com animação para aparecer */
-    .nav-left {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 0; /* Alinhando os botões à direita */
-        width: auto; /* Não ocupar toda a largura */
-        background-color: #333;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0;
-        
-    }
-
-    /* Ao ativar o menu, os botões aparecem com animação */
-    .nav-left.active {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-        justify-content: space-evenly;
-        padding-bottom: 15px;
-        top: 57px;
-        border-radius: 15px;
-        padding-top: 15px;
-    }
-
-    /* O botão de menu ficará à esquerda */
-    .menu-btn {
-        display: block;
-    }
-
-    /* O nav-right com o ícone de logout fica à direita */
-    .nav-right {
-        display: flex;
-        justify-content: flex-end;
-    }
-}
+  }
+  
