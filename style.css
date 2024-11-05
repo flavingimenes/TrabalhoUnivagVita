@@ -27,7 +27,7 @@ input[type="password"] {
 @media (min-width: 768px) {
 
     body{
-        background-image:url(imgs/leaves-imgs.jpg);
+        background-image:url(imgs/leaves-imgs.png);
         background-repeat: no-repeat;
         background-position: right;
         background-position-y: top;
