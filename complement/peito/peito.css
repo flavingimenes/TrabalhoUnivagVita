@@ -122,10 +122,25 @@
     text-transform: uppercase;
   }
 
+  .treinos>div>h3>strong{
+    color: #44aa00;
+  }
+
   .treinos>div>h3{
     text-align: justify;
   }
 
-  .treinos>div>p{
+  .treinos>div>img{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: solid;
+    border-bottom-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 2px;
+  }
 
+  .treinos>div>p{
+    text-align: center;
   }
