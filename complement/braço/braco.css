@@ -30,8 +30,13 @@
     padding-left: 20px;
     border-radius: 0px 0px 15px 15px;
     height: 60px;
+    position: fixed;
     background: rgb(0,0,0);
     background: linear-gradient(24deg, rgba(0,0,0,1) 0%, rgba(34,50,39,1) 68%, rgba(50,93,34,1) 100%);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   
   .logo {
@@ -95,5 +100,48 @@
     flex-direction: column;
     color: #44aa00;
     align-items: center;
+  }
+
+  .treinos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .treinos>div{
+    margin-bottom: 170px;
+  }
+  
+  .treinos>div>h1{
+    font-size: xx-large;
+    font-family: 'font-apple-bold', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  .treinos>div>h3>strong{
+    color: #44aa00;
+  }
+
+  .treinos>div>h3{
+    text-align: justify;
+  }
+
+  .treinos>div>img{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: solid;
+    border-bottom-width: 2px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 2px;
+  }
+
+  .treinos>div>p{
+    text-align: center;
   }
   
