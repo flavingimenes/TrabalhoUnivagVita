@@ -107,8 +107,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 120px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   .treinos>div{
@@ -129,6 +129,7 @@
 
   .treinos>div>h3{
     text-align: justify;
+    font-family: sans-serif, 'font-apple-bold';
   }
 
   .treinos>div>img{
@@ -137,11 +138,45 @@
     margin-bottom: 40px;
     border: solid;
     border-bottom-width: 2px;
-    border-left-width: 0px;
-    border-right-width: 0px;
+    border-left-width: 2px;
+    border-right-width: 2px;
     border-top-width: 2px;
+    border-color: #44aa00;
   }
 
   .treinos>div>p{
     text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .treinos>div>aside{
+    text-align: center;
+    background-color: rgb(214, 209, 209);
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .treino1{
+    background-color: rgb(230, 222, 222);
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .treino2{
+    background-color: rgb(230, 222, 222);
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .treino3{
+    background-color: rgb(230, 222, 222);
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .treino4{
+    background-color: rgb(230, 222, 222);
+    padding: 20px;
+    border-radius: 20px;
   }
