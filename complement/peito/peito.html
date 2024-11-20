@@ -15,7 +15,7 @@
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <ul class="menu-options">
       <li><a href="../../main.html">Início</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a href="#" id="contato">Contato</a></li>
       <div> <a href="../../index.html"><i class="material-icons">logout</i> </div></a>
     </ul>
   </nav>
@@ -64,6 +64,24 @@
 
   </div>
 
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section contact">
+        <h2>Contato</h2>
+        <p>Email: vitaunivag@gmail.com</p>
+        <p>Telefone: (65) 9218-4810</p>
+        <div class="socials" id="footer-contato">
+          <a href="https://www.facebook.com/jairmessias.bolsonaro/?locale=pt_BR" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/jairbolsonaro?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eautho" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/arlen_aug28/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 VITA'S Group. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script>
   
@@ -71,6 +89,16 @@
     const menu = document.querySelector('.menu-options');
     menu.classList.toggle('show');
   }
+
+  document.querySelector('#contato').addEventListener('click', function() {
+        const targetSection = document.querySelector('#footer-contato');
+        const targetPosition = targetSection.offsetTop;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
 
   </script>
 </body>
