@@ -118,6 +118,7 @@ font-size: 30px;
 .textomain{
     text-align: center;
     margin-top: 95px;
+    margin-bottom: 30px;
     font-family: 'archivo-black', sans-serif;
     font-size: 1.3em;
     letter-spacing: 0.1em;
@@ -417,10 +418,27 @@ footer {
 
 /* Media Query para telas maiores que 768px */
 @media (min-width: 768px) {
+    .container {
+        display: flex;
+        height: 90%;
+        width: 90%;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-evenly;
+    } 
+
+    .bar {
+        width: 380px;
+        height: 180px;
+        margin: 40px;
+    }
+
     .quem-somos{
         text-align: center;
-        margin-right: 70px;
-        margin-left: 70px;  
+        width: 80%;
+        margin: auto;
     }
 
     .quem-somos>p>strong{

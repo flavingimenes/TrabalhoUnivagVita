@@ -272,3 +272,22 @@
     color: #777;
     margin: 0;
   }
+
+    /* Media Query para telas maiores que 768px */
+@media (min-width: 768px) {
+
+  .treinos{
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .treino1, .treino2, .treino3, .treino4{
+   width: 35%;
+   align-content: center;
+ }
+ 
+}

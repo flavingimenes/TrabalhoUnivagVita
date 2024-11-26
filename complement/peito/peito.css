@@ -159,34 +159,7 @@
     border-radius: 15px;
   }
 
-  .treino1{
-    background-color: rgb(228, 227, 227);
-    padding: 20px;
-    border-radius: 20px;
-    -webkit-box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-    -moz-box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-    box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-  }
-
-  .treino2{
-    background-color: rgb(228, 227, 227);
-    padding: 20px;
-    border-radius: 20px;
-    -webkit-box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-    -moz-box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-    box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-  }
-
-  .treino3{
-    background-color: rgb(228, 227, 227);
-    padding: 20px;
-    border-radius: 20px;
-    -webkit-box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-    -moz-box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-    box-shadow: 23px 28px 45px -15px rgba(0,0,0,0.43);
-  }
-
-  .treino4{
+  .treino1, .treino2, .treino3, .treino4{
     background-color: rgb(228, 227, 227);
     padding: 20px;
     border-radius: 20px;
@@ -272,3 +245,25 @@
     color: #777;
     margin: 0;
   }
+
+
+  /* Media Query para telas maiores que 768px */
+@media (min-width: 768px) {
+
+  .treinos{
+    margin: auto;
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .treino1, .treino2, .treino3, .treino4{
+   width: 35%;
+   align-content: center;
+ }
+ 
+}
+
+ 
