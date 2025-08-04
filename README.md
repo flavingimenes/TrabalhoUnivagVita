@@ -8,7 +8,7 @@ Site estático desenvolvido para o projeto “Vita” no UNIVAG. A plataforma ap
 
 - **HTML5** (`index.html`, `main.html`)  
 - **CSS3** (`style.css`, `main.css`)  
-- **Imagens e GIFs** em `/imgs` e `/gifs`  
-- **Fontes personalizadas** em `/fonte`  
+- **Imagens e GIFs** 
+- **Fontes personalizadas** 
 
 ---
